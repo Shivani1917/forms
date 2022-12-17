@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order Form</title>
+
+    <script>
+        function myfunc(){
+            alert("Response has been submitted!")
+        }
+    </script>
+
+    <style>
+     *{
+         margin: 4px;
+         padding: 4px;
+     }
+
+     .star{
+         color: red;
+     }
+
+     #line{
+          padding: 0;
+     }
+
+     #p1{
+        margin-left: 52px;
+     }
+     
+     .product{
+        margin-left: 203px;
+     }
+
+     #text{
+        margin-left: 105px;
+     }
+
+     #date{
+        margin-left: 71px;
+     }
+
+     #address{
+        margin-left: 49px;
+     }
+
+     #line2{
+        margin-left: 204px;
+     }
+
+     #city{
+        margin-left: 205px;
+     }
+
+     #region{
+        margin-left: 5px;
+     }
+
+     #zip{
+        margin-left: 205px;
+     }
+
+     #country{
+        margin-left: 5px;
+        padding: 3px 20px;
+        background-color: white;
+        border: 1px solid grey;
+     }
+     
+     #first{
+        margin-left: 125px;
+     }
+
+     #last{
+         margin-left: 5px;
+     }
+
+     #phone{
+        margin-left: 123px;
+     }
+
+     #email{
+        margin-left: 123px;
+     }
+
+     div.term{
+        display: flex;
+        justify-content: center;
+     }
+
+     div.submit{
+        
+        display: flex;
+        justify-content: center;
+     }
+
+     #hh{
+        color: #23cbac;
+     }
+
+     #but{
+        padding: 15px 47px;
+        background-color: #2f2626;
+        color: white;
+     }
+
+     #agree{
+        width: 23px;
+     }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <h1>Online Order Form</h1>
+        
+        <p>Please fill in the order form below with the items you want to purchase from our store.Thank you for choosing our services!</p>
+        
+        <hr id="line">
+        
+        <br>
+        
+        <label>Prefered product<h sclass="star" style="color: red;">*</h></label>
+        <input type="radio" name="product" class="product" id="p1">#Product 1 <br>
+        <input type="radio" name="product" class="product">#Product 2 <br>
+        <input type="radio" name="product" class="product">#Product 3 <br>
+        <input type="radio" name="product" class="product">#Product 4 <br>
+        <input type="radio" name="product" class="product">#Product 5 <br>
+        <input type="radio" name="product" class="product">#Product 6 <br>
+         
+        <h2>Shipping & billing details</h2>
+        
+        <label for="text">Quantity<h class="star">*</h></label>
+        <input type="text" name="text" id="text" required><br>
+        
+        <label for="date">Delivary Date<h class="star">*</h></label>
+        <input type="date" name="date" id="date" required><br>
+        
+        <label for="address">Delivery Address<h class="star">*</h></label>
+        <input type="text" name="address" id="address" placeholder="Street Address" size="50" required><br>   
+        <input type="text" name="address" id="line2" placeholder="Street Address Line 2" size="50" required><br>  
+        <input type="text" name="address" id="city" placeholder="City" required>  
+        <input type="text" name="address" id="region" placeholder="Region" size="22" required>  <br>
+        <input type="text" name="address" id="zip" placeholder="Postal/Zip Code" required> 
+        <select name="country" id="country" required>
+            <option>Select Country</option>
+            <option>India</option>
+            <option>America</option>
+            <option>Korea</option>
+            <option>China</option>
+            <option>Japan</option>
+        </select><br>
+        
+        <label for="name">Name<h class="star">*</h></label>
+        <input type="text" name="first" id="first" placeholder="First" required>
+        <input type="text" name="last" id="last" placeholder="Last" size="22"><br>  
+
+        <label for="phone">Phone<h class="star">*</h></label>
+       
+        <input type="text" name="phone" id="phone" placeholder="##### #####" required><br>  
+        
+        <label for="email">Email<h class="star">*</h></label>
+       
+        <input type="email" name="email" id="email" placeholder="####@###.com" required><br>  
+
+        <div class="term">
+        <input type="checkbox" name="agree" id="agree" required>
+        <label for="agree">I agree to the<h id="hh">terms and service.</h> </label></div>
+
+        <div class="submit">
+        <button id="but" onclick="myfunc()">ORDER NOW</button>
+    </div>
+
+    </form>
+</div>
+</body>
+</html>

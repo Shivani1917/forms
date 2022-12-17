@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+
+    <style>
+        *{
+            background-color: rgb(49, 6, 83);
+        }
+      .container{
+        margin-left: 41vw;
+        margin-top: 32vh;
+      }
+
+      h1{
+        padding-left: 80px;
+        color: white;
+      }
+
+      #uname{
+        padding: 11px 93px 16px 27px;
+        border: 0px;
+        background-color: rgb(41, 4, 70);
+        color: grey;
+      }
+
+      #pass{
+        padding: 11px 93px 16px 27px;
+        border: 0px;
+        background-color: rgb(41, 4, 70);
+        color: grey;
+      }
+
+      #buton{
+          padding: 12px 100px;
+          color: white;
+          border: 0px;
+          background-color:  blue;
+      }
+    </style>
+
+    <script>
+        function myfunc(){
+            alert("Loging in!");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+    <h1>Login</h1>
+
+    <input type="text" name="user" id="uname" placeholder="Username" required>
+    
+    <br><br>
+
+    <input type="password" name="pass" id="pass" placeholder="Password" required>
+    
+    <br><br>
+
+    <input type="button" value="Let me in." id="buton" onclick="myfunc()">
+
+</div>
+
+</body>
+</html>

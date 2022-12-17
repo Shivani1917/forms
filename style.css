@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 12vh;
+  background-color: grey;
+  color: black;
+}
+
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer {
+    height: 6vh;
+    background-color: grey;
+    color: black;
+    padding: 18px 63px;
+    display: flex;
+    justify-content: center;
+}
